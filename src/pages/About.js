@@ -1,31 +1,37 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import "./About.css";
-import profile_pic from "../assets/profile_pic.jpg";
+import nicole_pic from '../assets/nicole_pic.jpg';
 
+  
 export default class About extends Component {
   render() {
     return (
       <div>
-        {/* <p>Design your About me page </p> */}
+        <p>
+          <div>
         <div class="split left">
           <div className="centered">
-            <img
+            <img 
               className="profile_image"
-              src={profile_pic}
-              alt="Profile Pic"
-            ></img>
+              // Image goes here
+             src = {nicole_pic}
+             alt="Profile Pic"
+            
+              
+              ></img>
           </div>
         </div>
         <div className="split right">
           <div className="centered">
-            <div className="name_title">Your Name</div>
+            <div className="name_title">Nicole Ani</div>
             <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
+               I am Nicole Ani. I'm a rising junior in the University of Massachusetts Amherst. I enjoy traveling, reading and creating fashion and lifestyle content.
             </div>
           </div>
         </div>
       </div>
-    );
+</p> 
+      </div>
+    )
   }
 }
